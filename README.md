@@ -162,7 +162,15 @@ The website was built with the following objectives:
 
 ## Screenshots
 
-*Add screenshots after deployment.*
+<img width="1896" height="857" alt="image" src="https://github.com/user-attachments/assets/aec67eb9-1984-4048-8104-fc3cfeb95e42" />
+
+
+<img width="1896" height="858" alt="image" src="https://github.com/user-attachments/assets/0406c979-ff80-4717-8d8b-40cfbba39d5e" />
+
+<img width="1845" height="877" alt="image" src="https://github.com/user-attachments/assets/f2ccbd19-9484-4933-b33c-5b5436accda3" />
+
+
+
 
 ---
 
