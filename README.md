@@ -146,7 +146,16 @@ public/
 
 ## Screenshots
 
-*Add screenshots here.*
+<img width="1895" height="853" alt="image" src="https://github.com/user-attachments/assets/dedcd58e-37f6-45f4-ab88-f8a6ccd6e0f9" />
+
+<img width="1898" height="857" alt="image" src="https://github.com/user-attachments/assets/2287b341-a3eb-41f2-8758-747b9b90496a" />
+
+<img width="1896" height="872" alt="image" src="https://github.com/user-attachments/assets/d0598162-7776-428e-8ce3-80db2bec5ee1" />
+
+<img width="1875" height="845" alt="image" src="https://github.com/user-attachments/assets/90651e92-55fd-47ba-a5f1-06fc3d2fca52" />
+
+<img width="1892" height="862" alt="image" src="https://github.com/user-attachments/assets/6f6f034e-603e-4f0e-9d13-6e4920757282" />
+
 
 ---
 
