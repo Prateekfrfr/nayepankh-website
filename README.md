@@ -1,16 +1,24 @@
 # NayePankh Foundation Website
 
-A modern, responsive NGO website built with **Next.js**, **TypeScript**, and **Tailwind CSS** for the NayePankh Foundation.
+A modern and responsive NGO website built for the NayePankh Foundation using **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-The platform is designed to showcase the foundation's mission, ongoing initiatives, community impact, volunteer opportunities, and donation drives through a clean, accessible, and engaging user experience.
+The website showcases the foundation's mission, social initiatives, volunteer opportunities, donation campaigns, and contact information through a clean and accessible user experience.
+
+## Live Demo
+
+https://nayepankh-website-topaz.vercel.app/
+
+## GitHub Repository
+
+https://github.com/Prateekfrfr/nayepankh-website
 
 ---
 
 ## Features
 
-* Responsive design for mobile, tablet, and desktop devices
-* Modern NGO-focused user interface
-* Smooth animations powered by Framer Motion
+* Fully responsive design
+* Modern NGO-focused UI
+* Smooth page animations with Framer Motion
 * Multi-page architecture using Next.js App Router
 * Dedicated pages for:
 
@@ -20,10 +28,10 @@ The platform is designed to showcase the foundation's mission, ongoing initiativ
   * Volunteer
   * Donate
   * Contact
-* Contact form with email and phone validation
-* Reusable and scalable component-based architecture
+* Form validation for user inputs
+* Reusable component-based architecture
 * SEO-friendly structure
-* Optimized performance with Next.js
+* Optimized performance and accessibility
 
 ---
 
@@ -40,7 +48,7 @@ The platform is designed to showcase the foundation's mission, ongoing initiativ
 * Tailwind CSS
 * PostCSS
 
-### Animations & Icons
+### Animation & Icons
 
 * Framer Motion
 * Lucide React
@@ -52,8 +60,8 @@ The platform is designed to showcase the foundation's mission, ongoing initiativ
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Prateekfrfr/Nayepankh-Foundation-task.git
-cd Nayepankh-Foundation-task
+git clone https://github.com/Prateekfrfr/nayepankh-website.git
+cd nayepankh-website
 ```
 
 ### Install Dependencies
@@ -62,13 +70,13 @@ cd Nayepankh-Foundation-task
 npm install
 ```
 
-### Run Development Server
+### Run the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Visit:
 
 ```text
 http://localhost:3000
@@ -78,28 +86,11 @@ http://localhost:3000
 
 ## Available Scripts
 
-### Start Development Server
-
 ```bash
-npm run dev
-```
-
-### Create Production Build
-
-```bash
-npm run build
-```
-
-### Run Production Build
-
-```bash
-npm run start
-```
-
-### Run ESLint
-
-```bash
-npm run lint
+npm run dev      # Start development server
+npm run build    # Create production build
+npm run start    # Run production build
+npm run lint     # Run ESLint
 ```
 
 ---
@@ -124,35 +115,28 @@ components/
 ├── CauseCards.tsx
 ├── CTASection.tsx
 ├── ImpactStats.tsx
-├── Motion.tsx
 └── SectionTitle.tsx
 
-lib/
-└── site-data.ts
-
 public/
-└── images/
+└── assets/
 ```
 
 ---
 
-## Design Goals
-
-The website was built with the following objectives:
+## Goals
 
 * Create a professional online presence for the foundation
-* Highlight social initiatives and community impact
+* Highlight community impact and ongoing initiatives
 * Encourage volunteering and donations
-* Improve accessibility and responsiveness
-* Deliver a clean and modern user experience
+* Deliver an accessible and user-friendly experience
+* Maintain a scalable and maintainable codebase
 
 ---
 
-## Future Improvements
+## Future Enhancements
 
+* Payment gateway integration
 * Volunteer registration backend
-* Donation gateway integration
-* Admin dashboard
 * Event management system
 * Blog and impact stories section
 * Newsletter subscription
@@ -162,49 +146,12 @@ The website was built with the following objectives:
 
 ## Screenshots
 
-<img width="1896" height="857" alt="image" src="https://github.com/user-attachments/assets/aec67eb9-1984-4048-8104-fc3cfeb95e42" />
-
-
-<img width="1896" height="858" alt="image" src="https://github.com/user-attachments/assets/0406c979-ff80-4717-8d8b-40cfbba39d5e" />
-
-<img width="1845" height="877" alt="image" src="https://github.com/user-attachments/assets/f2ccbd19-9484-4933-b33c-5b5436accda3" />
-
-
-
-
----
-
-## Deployment
-
-The application can be deployed on:
-
-* Vercel (Recommended)
-* Netlify
-* AWS
-* Any platform that supports Next.js applications
-
-To deploy on Vercel:
-
-1. Push the project to GitHub.
-2. Import the repository into Vercel.
-3. Deploy using the default Next.js settings.
-
----
-
-## Repository
-
-GitHub Repository:
-
-https://github.com/Prateekfrfr/Nayepankh-Foundation-task
+*Add screenshots here.*
 
 ---
 
 ## Author
 
-Developed by **Prateek Jha** as a modern web solution for the NayePankh Foundation.
+**Prateek Jha**
 
----
-
-## License
-
-This project is intended for educational and demonstration purposes.
+Built as a modern web solution for the NayePankh Foundation using Next.js, TypeScript, and Tailwind CSS.
