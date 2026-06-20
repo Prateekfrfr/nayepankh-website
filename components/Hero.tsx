@@ -14,12 +14,12 @@ export function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-42"
+          className="object-cover opacity-[0.42]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-naye-blue-900 via-naye-blue-900/86 to-naye-blue-900/30" />
       </div>
 
-      <div className="relative mx-auto grid min-h-[760px] max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+      <div className="relative mx-auto grid min-h-[520px] sm:min-h-[760px] max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
         <MotionDiv
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,8 @@ export function Hero() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-blue-50 sm:text-xl">
             NayePankh Foundation is a student-led NGO turning donations,
-            volunteer time and community trust into local action across Indian cities.
+            volunteer time and community trust into local action across Indian
+            cities.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -74,9 +75,17 @@ export function Hero() {
               {trustPoints.map((point) => {
                 const Icon = point.icon;
                 return (
-                  <div key={point.text} className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
-                    <Icon className="mt-0.5 shrink-0 text-naye-green" size={20} />
-                    <span className="text-sm font-bold leading-6">{point.text}</span>
+                  <div
+                    key={point.text}
+                    className="flex items-start gap-3 rounded-2xl bg-slate-50 p-4"
+                  >
+                    <Icon
+                      className="mt-0.5 shrink-0 text-naye-green"
+                      size={20}
+                    />
+                    <span className="text-sm font-bold leading-6">
+                      {point.text}
+                    </span>
                   </div>
                 );
               })}

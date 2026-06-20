@@ -7,11 +7,15 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { site } from "@/lib/site-data";
 
 export default function Contact() {
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[6-9]\d{9}$/;
 
@@ -26,7 +30,12 @@ export default function Contact() {
     }
 
     setError("");
-    alert("Form submitted successfully!");
+    setSuccess(true);
+    // Clear fields after successful submit
+    setFullName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
   };
 
   return (
@@ -67,15 +76,21 @@ export default function Contact() {
           </FadeIn>
 
           <FadeIn className="rounded-[2rem] bg-white p-6 premium-shadow sm:p-8">
-            <form className="grid gap-5">
+            <form className="grid gap-5" onSubmit={handleSubmit}>
               <label className="grid gap-2 text-sm font-black text-naye-blue">
                 Full name
-                <input className="rounded-2xl border border-slate-200 px-4 py-3 font-semibold text-slate-700 outline-none transition focus:border-naye-green focus:ring-4 focus:ring-emerald-100" />
+                <input
+                  name="fullName"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  className="rounded-2xl border border-slate-200 px-4 py-3 font-semibold text-slate-700 outline-none transition focus:border-naye-green focus:ring-4 focus:ring-emerald-100"
+                />
               </label>
 
               <label className="grid gap-2 text-sm font-black text-naye-blue">
                 Email address
                 <input
+                  name="email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -86,6 +101,7 @@ export default function Contact() {
               <label className="grid gap-2 text-sm font-black text-naye-blue">
                 Phone number
                 <input
+                  name="phone"
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -96,7 +112,10 @@ export default function Contact() {
               <label className="grid gap-2 text-sm font-black text-naye-blue">
                 Message
                 <textarea
+                  name="message"
                   rows={5}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="rounded-2xl border border-slate-200 px-4 py-3 font-semibold text-slate-700 outline-none transition focus:border-naye-green focus:ring-4 focus:ring-emerald-100"
                 />
               </label>
@@ -104,11 +123,15 @@ export default function Contact() {
               {error && (
                 <p className="text-sm font-semibold text-red-500">{error}</p>
               )}
+              {success && (
+                <p className="text-sm font-semibold text-green-600">
+                  Message sent successfully.
+                </p>
+              )}
 
               <button
-                onClick={handleSubmit}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-naye-orange px-6 py-4 font-black text-white transition hover:bg-orange-500"
-                type="button"
+                type="submit"
               >
                 <Send size={19} />
                 Send message
