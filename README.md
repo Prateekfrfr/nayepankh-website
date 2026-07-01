@@ -8,9 +8,7 @@ The website showcases the foundation's mission, social initiatives, volunteer op
 
 https://nayepankh-website-topaz.vercel.app/
 
-## GitHub Repository
 
-https://github.com/Prateekfrfr/nayepankh-website
 
 ---
 
